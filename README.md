@@ -36,6 +36,8 @@ Metrics like accuracy, precision, recall, and F1-score will be used to measure h
 
 The following metrics will be used to evaluate the models:
 - **Accuracy**: How often the model predicts correctly.
+- **Precision**: How many of the positive predictions are actually correct.
+- **Recall**: How well the model finds all the positive cases.
 - **F1-Score**: A balance between precision and recall.
 - **AUC-ROC**: Measures how well the model separates positive and negative cases.
 
