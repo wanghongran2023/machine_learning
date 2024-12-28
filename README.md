@@ -8,7 +8,7 @@ This project aims to leverage deep learning techniques to develop an automated s
 
 **Problem Statement**
 
-Pneumonia diagnosis through chest X-ray imaging presents significant challenges in resource-limited settings where access to skilled radiologists is minimal. Misdiagnosis or delayed diagnosis can result in inadequate treatment and worsening of patient conditions. The problem lies in the lack of scalable, accurate, and automated tools to assist in interpreting CXR images for pneumonia detection.
+Pneumonia diagnosis through chest X-ray imaging presents significant challenges in resource-limited settings where access to skilled radiologists is minimal. Misdiagnosis or delayed diagnosis can result in inadequate treatment and worsening of patient conditions. The problem lies in the lack of scalable, accurate, and automated tools to assist in interpreting CXR images for pneumonia detection. 
 
 This project seeks to solve the problem by developing a deep learning model capable of accurately identifying pneumonia from chest X-ray images. The solution should be scalable, cost-effective, and applicable in both urban hospitals and rural clinics.
 
@@ -28,11 +28,7 @@ The primary dataset for this project is the "Chest X-Ray Images (Pneumonia)" dat
 
 **Benchmark Model**
 
-The benchmark model for this project is a baseline CNN model without transfer learning. This simple architecture will be used to evaluate the effectiveness of the proposed solution. The benchmark model will have:
-- Two convolutional layers
-- Max-pooling layers
-- A fully connected dense layer
-- Softmax activation for classification
+The benchmark model for this project is a pre-trained ResNet-34 model fine-tuned through transfer learning. This architecture leverages the pre-trained weights on a large dataset (such as ImageNet) to extract features relevant to pneumonia detection from CXR images. Fine-tuning the ResNet-34 allows the model to adapt to the specific patterns present in the "Chest X-Ray Images (Pneumonia)" dataset. The model’s performance after transfer learning will serve as the baseline for comparison with further improvements or proposed solutions.
 
 Performance metrics such as accuracy, precision, recall, and F1-score will be computed to compare this model with the proposed solution.
 
@@ -80,4 +76,10 @@ The workflow for solving the problem includes the following steps:
    - Integrate the model into a diagnostic workflow.
 
 This structured design ensures the project’s success in addressing the problem of pneumonia diagnosis.
+
+**References**
+
+1. Rajpurkar, P., Irvin, J., Zhu, K., et al. (2017). CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning. arXiv preprint arXiv:1711.05225.
+2. Zech, J. R., et al. (2018). Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study. PLoS Medicine, 15(11), e1002683.
+3. Kermany, D. S., et al. (2018). Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning. Cell, 172(5), 1122-1131.e9.
 
