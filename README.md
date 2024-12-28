@@ -4,7 +4,7 @@ Pneumonia is a lung infection that causes swelling in the air sacs, which can fi
 
 Chest X-rays (CXRs) are a common and affordable way to diagnose pneumonia, but analyzing them can take time and lead to mistakes. In recent years, artificial intelligence (AI) and deep learning have shown that computers can help doctors by analyzing X-rays more accurately and quickly. Studies like those by Rajpurkar et al. (2017) and Zech et al. (2018) have shown that convolutional neural networks (CNNs) can detect diseases like pneumonia from X-rays.
 
-This project uses deep learning to create an automated system for detecting pneumonia in chest X-rays. This will make it easier and faster to diagnose pneumonia, especially in areas with few doctors.
+This project uses deep learning to create an model for detecting pneumonia in chest X-rays. This will make it easier and faster to diagnose pneumonia, especially in areas with few doctors.
 
 **Problem Statement**
 
